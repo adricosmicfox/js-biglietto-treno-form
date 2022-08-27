@@ -16,26 +16,64 @@
 
 <body>
 
+    <!-- form per inserimento dati -->
 
-    <form id="am-form" action="#">
+    <div class="container d-flex justify-content-center mt-3">
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    </div>
+
+    <form id="am_form" action="#">
 
         <div class="container mt-5">
 
-            <h2>Quanti KM vuoi percorrere?</h2>
-            <input id="am_km" class="form-control" type="text" placeholder="Inserisci i km">
+            <h3> Nome e Cognome</h3>
+            <input id="am_nomecognome" class="form-control mb-3" type="text"
+                placeholder="Inserisci il tuo Nome e Cognome">
 
-            <h2>Qual è la tua età?</h2>
-            <input id="am_age" class="form-control" type="text" placeholder="Inserisci la tua età">
+            <h3>Quanti KM vuoi percorrere?</h3>
+            <input id="am_km" class="form-control mb-3" type="text" placeholder="Inserisci i km">
+
+            <h3>Qual è la tua età?</h3>
+            <input id="am_age" class="form-control mb-3" type="text" placeholder="Inserisci la tua età">
 
             <div class="mt-4 mb-3">
-                <button type="submit" class="am-button btn btn-primary"> Calcola prezzo </button>
+                <button type="submit" class="am_button btn btn-primary"> Calcola prezzo </button>
             </div>
         </div>
     </form>
 
 
-    <span>Prezzo del biglietto</span> <span id="am_cost"> </span>
+
+    <!-- section per riepilogo dati -->
+    <div class="container d-flex justify-content-center mt-5">
+        <h2>IL TUO BIGLIETTO</h2>
     </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="am_colonnanomecognome col-3">
+                <h4>Nome e Cognome</h4>
+                <h4 id="am_cellanomecognome"> </h4>
+            </div>
+
+            <div class="am_colonnacarrozza col-3">
+                <h4>Carrozza</h4>
+                <h4 id="am_cellacarrozza"></h4>
+            </div>
+
+            <div class="am-colonnacodice col-3">
+                <h4> Codice CP</h4>
+                <h4 id="am_cellacodicecp"></h4>
+            </div>
+
+            <div class="am-colonnaprezzo col-3">
+                <h4>Prezzo</h4>
+                <h4 id="am_cost"> </h4>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
