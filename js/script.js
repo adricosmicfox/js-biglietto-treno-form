@@ -15,7 +15,7 @@ function calcoloPrezzoFinale() {
     let prezzo;
     let nomeCognome;
 
-    // inizializzazione varibaile nomeCognome (prendo il dato dal form)
+    // inizializzazione variabile nomeCognome (prendo il dato dal form)
     nomeCognome = document.getElementById("am_nomecognome").value;
 
     //inizializzazione variabile etaViaggiatore (prendo il dato dall'input)
